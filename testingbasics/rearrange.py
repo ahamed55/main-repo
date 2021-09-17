@@ -1,5 +1,4 @@
 import re
-from typing import Pattern
 
 def rearrange_name(name):
     result = re.search(r"^([\w]*),? ([\w, \.]*)",name)
