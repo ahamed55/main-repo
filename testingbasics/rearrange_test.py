@@ -1,4 +1,3 @@
-from unittest.case import TestCase
 import rearrange
 import unittest
 
@@ -17,5 +16,8 @@ class test(unittest.TestCase):
         testcase = "ahamed, ibrahim.A"
         expected = "ibrahim.A ahamed"
         self.assertEqual(rearrange.rearrange_name(testcase),expected)
+
+    def test_erroe(self):
+        self.assertRaises(ValueError,rearrange.rearrange_name,1)
          
 unittest.main()
